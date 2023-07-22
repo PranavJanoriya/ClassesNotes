@@ -84,12 +84,17 @@ setTimeout(function callback() {
      console.log(ErrorMessage);
 }, 1000)
 
-let pagecount = 0 
+let pagecount = 1 
 const item = [2, 3, 4, 5]
 item.forEach(function items(num) {
      pagecount++ 
      console.log(num);
 })
 
-console.log(pagecount); 
+function items (num) {
+     pagecount++
+     console.log(num);
+}
+
+console.log(`Page Count : ${pagecount}`); 
 
