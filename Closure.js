@@ -34,7 +34,7 @@ function Outerfunc() {
 }
 
 Outerfunc() // I am a Inner Scope 1 
-// Note Point : - Its say  to the a inner funtion outer function value acess 
+// Note Point : - Its say  to the a inner funtion acess to outer function value  
 // But a outer funtion is not acess to Inner funvtion value 
 
 function Onefunc() {
@@ -61,3 +61,35 @@ function func() {
 }
 
 func()
+
+//        Closure 
+function Superfunc() {
+     let Outervalue = "I am outer" 
+     function minorfunc() {
+          console.log(Outervalue);
+     }
+     minorfunc()
+}
+
+Superfunc() 
+// Note Point : - Its say to the a program to a function to function in the a proper reminder and acess to the outer function to inner function 
+
+// Closur Defination : - A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+//              Real world Uses 
+
+const ErrorMessage = "File not find "
+
+setTimeout(function callback() {
+     console.log(ErrorMessage);
+}, 1000)
+
+let pagecount = 0 
+const item = [2, 3, 4, 5]
+item.forEach(function items(num) {
+     pagecount++ 
+     console.log(num);
+})
+
+console.log(pagecount); 
+
