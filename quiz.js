@@ -1,6 +1,19 @@
-let number = 0 
+// 
 
-console.log(number);
-console.log(++number);
+var x = 2;
+var y = "2";
+console.log(x + y);
 
-console.log(number++);
+const the = [1, 2, 3, 4,5]
+const the1 ="the"
+setTimeout(() => {
+     console.log("the");
+}, 500);
+
+// let the2 = the1.every();
+
+// console.log(the2);
+
+const date = new Date() ;
+date.toLocaleTimeString();
+console.log(date);
