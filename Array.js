@@ -68,5 +68,4 @@ let e = arr.splice(2, 5);
 
 console.log(e);
 
-
-
+const the = [];

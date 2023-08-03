@@ -4,7 +4,7 @@ function crreatePromise() {
      return new Promise(function exec(resolve, reject){
           //  Your code goes here 
           setTimeout( function f(){
-               console.log("Timer Done");
+               console.log("Timer Done Resolve");
                resolve("Done");
                // reject(404);
           }, 9000);
@@ -25,7 +25,7 @@ x.then( function f(value) {
 console.log("End");
 
 for(let i = 0; i<100; i++) {
-     // Some code
+     console.log(i);
 }
 
 //  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -35,7 +35,7 @@ function crreatePromise1() {
      return new Promise(function exec(resolve, reject){
           //  Your code goes here 
           setTimeout( function f(){
-               console.log("Timer Done");
+               console.log("Timer Done Reject");
                // resolve("Done");
                reject(404);
           }, 9000);
@@ -56,5 +56,8 @@ y.then( function f(value) {
 console.log("End");
 
 for(let i = 0; i<100; i++) {
-     // Some code
+     console.log(i);
 }
+ 
+//   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
